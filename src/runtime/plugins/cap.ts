@@ -1,10 +1,10 @@
 import { defineNuxtPlugin } from '#imports'
-import type { Cap as CapInstance } from '@cap.js/widget'
+import type CapClass from '@cap.js/widget'
 
 import '@cap.js/widget'
 
 declare global {
-  var Cap: CapInstance
+  var Cap: typeof CapClass
 }
 
 export default defineNuxtPlugin(() => {
