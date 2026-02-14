@@ -28,6 +28,14 @@ const module: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
     addImports([
       { name: 'useCap', from: resolver.resolve('./runtime/composables/useCap') },
       { name: 'resetCap', from: resolver.resolve('./runtime/utils/resetCap') },
+      { name: 'CapConfig', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
+      { name: 'CapInstance', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
+      { name: 'CapClass', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
+      { name: 'CapWidget', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
+      { name: 'CapErrorEvent', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
+      { name: 'CapProgressEvent', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
+      { name: 'CapResetEvent', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
+      { name: 'CapSolveEvent', from: resolver.resolve('./runtime/types/Cap.d'), type: true },
     ])
 
     addComponent({

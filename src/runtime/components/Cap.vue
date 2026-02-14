@@ -8,7 +8,7 @@
     CapResetEvent,
     CapSolveEvent,
     CapWidget,
-  } from '@cap.js/widget'
+  } from '../types/Cap'
 
   const props = defineProps({
     workerCount: { type: Number, required: false },

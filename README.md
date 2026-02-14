@@ -70,13 +70,6 @@ The component exposes four events:
 
 ```vue
 <script setup lang="ts">
-  import type {
-    CapErrorEvent,
-    CapProgressEvent,
-    CapResetEvent,
-    CapSolveEvent,
-  } from '@cap.js/widget'
-
   function onSolve(event: CapSolveEvent): void {
     console.log('Solved:', event)
   }

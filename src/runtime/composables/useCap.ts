@@ -1,7 +1,8 @@
 import { useNuxtApp, useRuntimeConfig } from '#app'
-import type { Cap, CapConfig, CapWidget } from '@cap.js/widget'
 
-export function useCap(config?: CapConfig, el?: CapWidget): Cap | undefined {
+import type { CapConfig, CapInstance, CapWidget } from '../types/Cap'
+
+export function useCap(config?: CapConfig, el?: CapWidget): CapInstance | undefined {
   const { $cap } = useNuxtApp()
   const { cap } = useRuntimeConfig().public
 

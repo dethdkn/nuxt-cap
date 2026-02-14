@@ -1,4 +1,4 @@
-import type { CapWidget } from '@cap.js/widget'
+import type { CapWidget } from '../types/Cap'
 
 export function resetCap(): void {
   if (!import.meta.client) return
