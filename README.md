@@ -1,4 +1,4 @@
-<h1 align="center">nu</h1>
+<h1 align="center">nuxt-cap</h1>
 <p align="center">🧢 Integrate Cap into your Nuxt websites/applications.</p>
 
 <p align="center">
