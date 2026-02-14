@@ -1,0 +1,68 @@
+{
+  "name": "nuxt-cap",
+  "version": "0.0.0",
+  "description": "🧢 Integrate Cap into your Nuxt websites/applications.",
+  "keywords": [
+    "cbpf",
+    "module",
+    "nuxt"
+  ],
+  "homepage": "https://github.com/dethdkn/nuxt-cap",
+  "bugs": "https://github.com/dethdkn/nuxt-cap/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Gabriel 'DethDKN' Rosa",
+    "email": "gabriel@rosa.dev.br",
+    "url": "https://rosa.dev.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dethdkn/nuxt-cap.git"
+  },
+  "funding": "https://github.com/sponsors/dethdkn",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "scripts": {
+    "postinstall": "bun run dev:prepare",
+    "dev": "nuxi dev playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev:build": "nuxi build playground",
+    "build": "nuxt-module-build build",
+    "fmt": "oxfmt --check",
+    "fmt:fix": "oxfmt",
+    "lint": "oxlint --type-aware",
+    "lint:fix": "oxlint --type-aware --fix",
+    "typecheck": "vue-tsc --noEmit",
+    "prerelease": "bun run fmt && bun run lint && bun run typecheck ",
+    "release": "bun run prerelease && bun run build && bumpp && sudo npm publish"
+  },
+  "dependencies": {
+    "@cap.js/widget": "^0.1.34",
+    "@nuxt/kit": "^4.3.1"
+  },
+  "devDependencies": {
+    "@dethdkn/ox-config": "^1.0.10",
+    "@nuxt/module-builder": "^1.0.2",
+    "@nuxt/schema": "^4.3.1",
+    "@types/bun": "^1.3.9",
+    "nuxt": "^4.3.1",
+    "typescript": "5.9.3",
+    "vue-tsc": "^3.2.4"
+  }
+}
