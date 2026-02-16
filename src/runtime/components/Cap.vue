@@ -35,6 +35,8 @@
     (event: 'progress', cap: CapProgressEvent): void
   }>()
 
+  const { cap } = useRuntimeConfig().public
+
   const capEl = ref<CapWidget>()
 
   function solve(event: CapSolveEvent): void {
@@ -51,6 +53,12 @@
   }
 
   onNuxtReady(() => {
+    if (!cap?.apiEndpoint) {
+      throw new Error(
+        '[Cap] No API endpoint provided. Please set the "cap.apiEndpoint" runtime config or provide it in nuxt config.',
+      )
+    }
+
     const el = capEl.value
     if (!el) return
 
@@ -69,8 +77,6 @@
     el.removeEventListener('reset', reset)
     el.removeEventListener('progress', progress)
   })
-
-  const { cap } = useRuntimeConfig().public
 </script>
 
 <template>
