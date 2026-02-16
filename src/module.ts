@@ -10,12 +10,18 @@ declare module 'nuxt/schema' {
 }
 
 interface ModuleOptions {
+  enabled?: boolean
   apiEndpoint?: string
 }
 
 const module: NuxtModule<ModuleOptions> = defineNuxtModule<ModuleOptions>({
   meta: { name: 'cap', configKey: 'cap', compatibility: { nuxt: '>=3.0.0' } },
-  setup({ apiEndpoint }, nuxt) {
+  defaults: { enabled: true, apiEndpoint: '' },
+  setup({ enabled, apiEndpoint }, nuxt) {
+    if (!enabled) {
+      return
+    }
+
     const resolver = createResolver(import.meta.url)
 
     const { runtimeConfig } = nuxt.options
