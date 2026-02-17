@@ -5,7 +5,7 @@ import type { CapClass } from '../types/Cap'
 import '@cap.js/widget'
 
 declare global {
-  var Cap: CapClass
+  var Cap: CapClass | undefined
 }
 
 export default defineNuxtPlugin(() => {

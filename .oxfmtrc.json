@@ -14,7 +14,7 @@
       ["external"],
       ["internal"],
       ["parent", "sibling"],
-      ["side-effect"],
+      ["side_effect"],
       ["index"]
     ],
     "sortSideEffects": true
