@@ -12,6 +12,11 @@
       <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67" alt="Gitmoji"/>
    </a>
 </p>
+<h2 align="center">
+   <a href="https://nuxt-cap.pages.dev/">
+      📚 Full Documentation
+   </a>
+</h2>
 
 ## 🚀 Setup
 
@@ -19,6 +24,25 @@ Install `nuxt-cap` dependency to your project:
 
 ```sh
 npx nuxt module add nuxt-cap
+```
+
+Or manually
+
+1. Install with your favorite package manager:
+   - **bun** : `bun add nuxt-cap`
+   - npm : `npm i nuxt-cap`
+   - pnpm : `pnpm add nuxt-cap`
+   - yarn : `yarn add nuxt-cap`
+
+2. Add it to your `modules` section in your `nuxt.config`:
+
+```ts
+export default defineNuxtConfig({
+  modules: ['nuxt-cap'],
+  cap: {
+    // ...configs
+  },
+})
 ```
 
 ## ⚙️ Configuration
@@ -54,8 +78,6 @@ This module auto-imports a component called:
 ```vue
 <Cap />
 ```
-
----
 
 ## 📡 Emits
 
@@ -174,9 +196,9 @@ resetCap()
 
 Calling `resetCap()` will reset the current widget state, allowing the challenge to be solved again.
 
-## 👻 Invisible Mode
+## 🪄 useCap composable
 
-For invisible mode, you can use the `useCap()` composable.
+You can use the `useCap()` composable for invisible mode.
 
 It returns a Cap instance, similar to the one described in the official invisible guide:
 
