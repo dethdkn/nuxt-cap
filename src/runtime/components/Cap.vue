@@ -2,6 +2,7 @@
   import { onNuxtReady, useRuntimeConfig } from '#app'
   import { onUnmounted, ref } from 'vue'
   import type { PropType } from 'vue'
+
   import type {
     CapErrorEvent,
     CapProgressEvent,

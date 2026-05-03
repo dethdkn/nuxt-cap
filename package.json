@@ -55,19 +55,19 @@
     "release": "bun run prerelease && bun run build && bumpp && sudo npm publish"
   },
   "dependencies": {
-    "@cap.js/widget": "^0.1.34",
-    "@nuxt/kit": "^4.3.1"
+    "@cap.js/widget": "^0.1.46",
+    "@nuxt/kit": "^4.4.4"
   },
   "devDependencies": {
-    "@dethdkn/ox-config": "^1.0.12",
+    "@dethdkn/ox-config": "^1.0.20",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.3.1",
-    "@types/bun": "^1.3.9",
-    "bumpp": "^10.4.1",
-    "nuxt": "^4.3.1",
-    "typescript": "5.9.3",
+    "@nuxt/schema": "^4.4.4",
+    "@types/bun": "^1.3.13",
+    "bumpp": "^11.0.1",
+    "nuxt": "^4.4.4",
+    "typescript": "6.0.3",
     "vitepress": "^1.6.4",
-    "vue-tsc": "^3.2.4"
+    "vue-tsc": "^3.2.7"
   },
-  "packageManager": "bun@1.3.9"
+  "packageManager": "bun@1.3.13"
 }

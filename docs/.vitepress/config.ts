@@ -3,14 +3,8 @@ import { defineConfig } from 'vitepress'
 import { description, version } from '../../package.json'
 
 export default defineConfig({
-  title: 'Nuxt Cap',
-  description,
-  lang: 'en-US',
-  lastUpdated: true,
   cleanUrls: true,
-  sitemap: {
-    hostname: 'https://nuxt-cap.pages.dev',
-  },
+  description,
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['meta', { name: 'theme-color', content: '#007aff' }],
@@ -18,6 +12,11 @@ export default defineConfig({
     ['meta', { name: 'og:locale', content: 'en-US' }],
     ['meta', { name: 'og:site_name', content: 'Nuxt Cap' }],
   ],
+  lang: 'en-US',
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://nuxt-cap.pages.dev',
+  },
   themeConfig: {
     siteTitle: 'Nuxt Cap',
     logo: '/logo.png',
@@ -81,4 +80,5 @@ export default defineConfig({
       copyright: "© 2026 Gabriel 'DethDKN' Rosa",
     },
   },
+  title: 'Nuxt Cap',
 })

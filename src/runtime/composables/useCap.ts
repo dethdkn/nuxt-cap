@@ -6,13 +6,13 @@ export function useCap(config?: CapConfig, el?: CapWidget): CapInstance | undefi
   const { $cap } = useNuxtApp()
   const { cap } = useRuntimeConfig().public
 
-  if (!import.meta.client || !$cap) return
+  if (!import.meta.client || !$cap) return undefined
 
   if (!cap?.apiEndpoint && !config?.apiEndpoint) {
     console.error(
       '[useCap] No API endpoint provided. Please set the "cap.apiEndpoint" runtime config or provide it in the config parameter.',
     )
-    return
+    return undefined
   }
 
   const capInstance = new $cap({ apiEndpoint: cap?.apiEndpoint, ...config }, el)
