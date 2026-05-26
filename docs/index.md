@@ -13,8 +13,8 @@ hero:
       text: Get Started
       link: /guide/setup
     - theme: alt
-      text: capjs.js.org
-      link: https://capjs.js.org
+      text: trycap.dev
+      link: https://trycap.dev
     - theme: alt
       text: View on GitHub
       link: https://github.com/dethdkn/nuxt-cap

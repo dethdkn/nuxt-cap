@@ -166,8 +166,8 @@ Allows you to customize the widget language.
 
 ## 🎨 Customizing Appearance
 
-To customize Cap’s appearance, follow the official Cap widget customization guide:
-[Customizing](https://capjs.js.org/guide/widget.html#customizing)
+To customize Cap’s appearance, follow the official Cap widget styling guide:
+[Styling](https://trycap.dev/guide/widget.html#styling)
 
 ## 🔄 Reset
 
@@ -198,11 +198,11 @@ Calling `resetCap()` will reset the current widget state, allowing the challenge
 
 ## 🪄 useCap composable
 
-You can use the `useCap()` composable for invisible mode.
+You can use the `useCap()` composable for programmatic mode.
 
-It returns a Cap instance, similar to the one described in the official invisible guide:
+It returns a Cap instance, similar to the one described in the official programmatic mode guide:
 
-[Guide](https://capjs.js.org/guide/invisible.html)
+[Guide](https://trycap.dev/guide/programmatic.html)
 
 You can call any available Cap instance method, such as `cap.solve()`.
 

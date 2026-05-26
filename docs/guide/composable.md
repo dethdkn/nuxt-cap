@@ -1,10 +1,10 @@
 ## 🪄 useCap composable
 
-You can use the `useCap()` composable for invisible mode.
+You can use the `useCap()` composable for programmatic mode.
 
-It returns a Cap instance, similar to the one described in the official invisible guide:
+It returns a Cap instance, similar to the one described in the official programmatic mode guide:
 
-[Guide](https://capjs.js.org/guide/invisible.html)
+[Guide](https://trycap.dev/guide/programmatic.html)
 
 You can call any available Cap instance method, such as `cap.solve()`.
 

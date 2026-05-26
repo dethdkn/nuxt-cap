@@ -93,8 +93,8 @@ Allows you to customize the widget language.
 
 ## 🎨 Customizing Appearance
 
-To customize Cap’s appearance, follow the official Cap widget customization guide:
-[Customizing](https://capjs.js.org/guide/widget.html#customizing)
+To customize Cap’s appearance, follow the official Cap widget styling guide:
+[Styling](https://trycap.dev/guide/widget.html#styling)
 
 ## 🔄 Reset
 
