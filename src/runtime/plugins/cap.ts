@@ -1,6 +1,5 @@
 import { defineNuxtPlugin } from '#imports'
-
-import type { CapClass } from '../types/Cap'
+import type { CapClass } from '@/src/runtime/types/Cap'
 
 import '@cap.js/widget'
 

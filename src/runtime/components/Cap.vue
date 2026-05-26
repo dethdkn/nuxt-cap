@@ -1,15 +1,15 @@
 <script setup lang="ts">
-  import { onNuxtReady, useRuntimeConfig } from '#app'
   import { onUnmounted, ref } from 'vue'
   import type { PropType } from 'vue'
 
+  import { onNuxtReady, useRuntimeConfig } from '#app'
   import type {
     CapErrorEvent,
     CapProgressEvent,
     CapResetEvent,
     CapSolveEvent,
     CapWidget,
-  } from '../types/Cap'
+  } from '@/src/runtime/types/Cap'
 
   const props = defineProps({
     workerCount: { type: Number, required: false },

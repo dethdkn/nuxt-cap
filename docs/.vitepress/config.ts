@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 
+// oxlint-disable-next-line import/no-relative-parent-imports
 import { description, version } from '../../package.json'
 
 export default defineConfig({
